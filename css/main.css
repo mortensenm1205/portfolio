@@ -2,6 +2,11 @@
 
 */
 
+body {
+  margin: 0 auto;
+  max-width: 75%;
+}
+
 header h1 {
   color: #CC546C;
   background-color: #82FFDE;
@@ -14,12 +19,17 @@ section p {
   background-color: #FFC8C2;
   font-family: 'Sarala', sans-serif;
   line-height: 30px;
+  padding: 10px;
+}
+
+section img {
+  display: inline-block;
+  max-width: 100%;
 }
 
 
 @media (min-width: 650px) {
-  section p {
-    color: #FFC8C2;
-    background-color: #117399;
+  body {
+    max-width: 65%;
   }
 }
