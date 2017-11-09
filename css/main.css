@@ -1,4 +1,15 @@
+/*
+
+*/
+
 header h1 {
-  font-size: 3em;
-  text-align: center;
+  color: #CC546C;
+  background-color: #82FFDE;
+  font-family: 'Roboto Slab', serif;
+}
+
+section p {
+  color: #117399;
+  background-color: #FFC8C2;
+  font-family: 'Sarala', sans-serif;
 }
