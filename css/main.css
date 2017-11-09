@@ -6,10 +6,12 @@ header h1 {
   color: #CC546C;
   background-color: #82FFDE;
   font-family: 'Roboto Slab', serif;
+  text-align: center;
 }
 
 section p {
   color: #117399;
   background-color: #FFC8C2;
   font-family: 'Sarala', sans-serif;
-} 
+  line-height: 19px;
+}
