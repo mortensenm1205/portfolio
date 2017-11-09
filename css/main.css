@@ -15,3 +15,11 @@ section p {
   font-family: 'Sarala', sans-serif;
   line-height: 30px;
 }
+
+
+@media (min-width: 650px) {
+  section p {
+    color: #FFC8C2;
+    background-color: #117399;
+  }
+}
