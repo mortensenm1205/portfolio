@@ -1,34 +1,144 @@
-/*
-
-*/
-
 body {
-  margin: 0 auto;
-  max-width: 75%;
+  font-size: 18px;
+  margin: 0;
+  color: #000;
+  font-family: arial;
+  background-color: #d7ccc2;
+  position: relative;
 }
 
-header h1 {
-  color: #CC546C;
-  background-color: #82FFDE;
-  font-family: 'Roboto Slab', serif;
+#main-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 4%;
+}
+
+#main-container header,
+#main-container main {
+  margin: 5% 0;
+}
+
+#main-nav a {
+  display: block;
+  padding: 4% 0;
+  margin: 1% 0;
+  font-size: 1.5em;
   text-align: center;
+  text-decoration: none;
+  color: #000;
+  border-radius: 5px;
+  border: 3px solid #c29d57;
 }
 
-section p {
-  color: #117399;
-  background-color: #FFC8C2;
-  font-family: 'Sarala', sans-serif;
+#main-title,
+#main-content {
+  padding: 4%;
+  margin: 0;
+}
+
+#main-title {
+  text-align: center;
+  font-size: 2em;
+  color: #323138;
+}
+
+
+#main-content p {
+  margin: 2% 0;
   line-height: 30px;
-  padding: 10px;
 }
 
-section img {
-  max-width: 100%;
+#main-content img {
+  width: 90%;
+  display: block;
+  border: 10px solid #323138;
+  margin: 0 auto;
 }
 
+footer {
+  width: 100%;
+  background-color: #B5B4B3;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+}
 
-@media (min-width: 650px) {
-  body {
-    max-width: 65%;
+@media (min-width: 700px) {
+
+  #main-title {
+    font-size: 2.3em;
+  }
+
+  #main-nav a {
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+    float: right;
+    width: 15%;
+    border: none;
+    border-bottom: 3px solid #c29d57;
+  }
+
+  #main-nav::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  #main-container main {
+    font-size: 1.1em;
+  }
+
+  #main-container main::after,
+  #main-content::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  #main-content p {
+    padding-left: 4%;
+    padding-right: 2%;
+    line-height: 40px;
+  }
+
+  #main-content img {
+    width: 75%;
+  }
+
+  footer::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+@media (min-width:1200px) {
+
+  #main-nav a {
+    width: 10%;
+    font-size: 1em;
+  }
+
+  #main-container article #main-title {
+    width: 20%;
+    float: left;
+    text-align: left;
+  }
+
+  #main-content {
+    width: 60%;
+    float: right;
+  }
+
+  #main-content p {
+    float: none;
+    width: auto;
   }
 }
