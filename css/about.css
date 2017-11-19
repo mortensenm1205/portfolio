@@ -46,6 +46,7 @@ body {
 #main-content p {
   margin: 2% 0;
   line-height: 30px;
+  box-sizing: border-box;
 }
 
 #main-content img {
