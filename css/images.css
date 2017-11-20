@@ -1,6 +1,6 @@
 body {
   font-family: arial;
-  background-color: #276073;
+  background-color: #d7ccc2;
 }
 
 .main-container {
@@ -37,7 +37,7 @@ border-bottom: 3px solid #707690;
 padding: 0 0 20px 0;
 margin: 0 4% 0 0;
 }
-*/ 
+*/
 
 /*
 Using CSS Grid, optional layout.
@@ -76,7 +76,7 @@ Using CSS Grid, optional layout.
   width: 99%;
   height: 250px;
   margin: 2px;
-  border: 10px solid #DECCE8;
+  border: 10px solid #c29d57;
   box-sizing: border-box;
 }
 

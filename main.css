@@ -1,0 +1,40 @@
+body {
+  font-family: arial;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, [col] 1fr);
+  grid-template-rows: 99vh;
+}
+
+#main-header,
+#main-content {
+  grid-column: col / span 4;
+}
+
+#main-header {
+  display: grid;
+  justify-content: end;
+  grid-row: 1;
+}
+
+#main-content {
+  grid-row: 1;
+}
+
+#main-content h1 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+#hero-img {
+  z-index: -1;
+  background-image: url('imgs/top-view-plant.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  grid-column: col / span 4;
+  grid-row: 1;
+}
