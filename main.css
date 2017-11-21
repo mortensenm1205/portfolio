@@ -1,11 +1,12 @@
 body {
+  font-size: 18px;
   font-family: arial;
   background-color: #D9EDA4;
 }
 
 #container {
   display: grid;
-  grid-template-columns: repeat(3, [col] 1fr);
+  grid-template-columns: repeat(2, [col] 1fr);
   grid-template-rows: auto 98vh;
 }
 
@@ -15,9 +16,21 @@ body {
 }
 
 #main-header {
-  display: grid;
   grid-row: 1;
+  text-align: center;
 }
+
+#main-header a {
+  margin: 5%;
+  font-size: 1.4em;
+  text-decoration: none;
+  color: #fff;
+}
+
+#main-header a:nth-child(1) {
+  display: block;
+}
+
 
 #main-content {
   align-self: center;
@@ -42,7 +55,13 @@ body {
   }
 
   #main-header {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
     justify-content: end;
+
+  }
+
+  #main-header a {
   }
 
   #hero-img {
