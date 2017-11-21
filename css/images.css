@@ -51,12 +51,17 @@ Using CSS Grid, optional layout.
   justify-content: end;
 }
 
-#main-nav a:first-child {
+#main-nav a:nth-child(1) {
+  grid-column: nav-col 3;
+  grid-row: nav-row 2;
+}
+
+#main-nav a:nth-child(2) {
   grid-column: nav-col 4;
   grid-row: nav-row 2;
 }
 
-#main-nav a:last-child {
+#main-nav a:nth-child(3) {
   grid-column: nav-col 5;
   grid-row: nav-row 2;
 }
